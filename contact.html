@@ -1,45 +1,97 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Contact · Best-Integrity</title><link rel="stylesheet" href="css/style.css"/></head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact · Qingdao Best-Integrity Trade Co., Ltd</title>
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; margin:0; color:#1f2937;}
+    header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:10}
+    .container{max-width:1120px;margin:0 auto;padding:20px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{height:30px}
+    nav a{margin-right:18px;text-decoration:none;color:#374151}
+    nav a.active, nav a:hover{color:#0b5cab}
+    h1{font-size:40px;margin:24px 0}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+    .card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,.06)}
+    .card .section{padding:18px 20px;border-bottom:1px solid #f1f5f9}
+    .form{padding:18px 20px}
+    .form-group{margin-bottom:14px}
+    label{display:block;margin-bottom:6px;color:#111827;font-weight:600}
+    input, textarea{width:100%;padding:10px 12px;border:1px solid #cbd5e1;border-radius:8px;font-size:15px}
+    button{background:#0b5cab;color:#fff;border:none;padding:12px 16px;border-radius:10px;cursor:pointer}
+    button:hover{background:#084a96}
+    footer{border-top:1px solid #eee;margin-top:36px}
+    small, .muted{color:#6b7280}
+    @media (max-width:900px){ .grid{grid-template-columns:1fr} }
+  </style>
+</head>
 <body>
-<header class="header">
-  <div class="nav container">
-    <a class="logo" href="index.html">
-      <img src="images/logo.png" alt="logo" onerror="this.style.display='none'"/>
-      <span>Qingdao Best-Integrity Trade Co., Ltd</span>
-    </a>
-    <nav class="navlinks">
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="precision.html">Precision</a>
-      <a href="terms.html">Terms</a>
-      <a href="contact.html">Contact</a>
-      <a href="about.html">企业简介</a>
-    </nav>
-  </div>
-</header>
-<main class="container">
-  <h1>Contact</h1>
-  <div class="split">
-    <div class="form">
-      <form method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
-        <label>Company & contact<input name="company" required></label>
-        <label>Email<input type="email" name="email" required></label>
-        <label>Request details<textarea rows="6" name="details" placeholder="Style, fabric, quantity, target delivery window, pet clothing, etc."></textarea></label>
-        <button class="button" type="submit">Send inquiry</button>
-        <div class="small">Replace YOUR_FORM_ID with your Formspree form ID.</div>
-      </form>
+  <header>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;">
+      <a class="brand" href="index.html" aria-label="Best-Integrity Home">
+        <img src="images/logo.png" alt="Best-Integrity logo">
+        <strong>Qingdao Best-Integrity Trade Co., Ltd</strong>
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="precision.html">Precision</a>
+        <a href="terms.html">Terms</a>
+        <a class="active" href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+      </nav>
     </div>
-    <div>
-      <h3>Qingdao Best-Integrity Trade Co.,Ltd</h3>
-      <p>RM1004, Shandong International Trade Mansion,<br>No.51 Taiping Road, Shinan District, Qingdao City, China.</p>
-      <p>Tel: 0086-532-66600216<br>Fax: 0086-532-85786604<br>Email: <a href="mailto:fashion@bestintegrityglobal.com">fashion@bestintegrityglobal.com</a></p>
+  </header>
+
+  <main class="container">
+    <h1>Contact</h1>
+    <div class="grid">
+      <div class="card">
+        <div class="section"><strong>Send an inquiry</strong></div>
+        <form action="https://formspree.io/f/xandbbya" method="POST" class="form">
+          <div class="form-group">
+            <label for="company">Company & contact</label>
+            <input type="text" id="company" name="company" placeholder="Company, your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="name@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="details">Request details</label>
+            <textarea id="details" name="details" rows="6" placeholder="Style, fabric, quantity, target delivery window, pet clothing, etc." required></textarea>
+          </div>
+          <!-- optional hidden fields -->
+          <input type="hidden" name="_subject" value="New inquiry from bestintegrityglobal.com" />
+          <input type="hidden" name="source_page" value="contact.html" />
+          <button type="submit">Send inquiry</button>
+          <p class="muted" style="margin-top:10px;">This form securely sends to fashion@bestintegrityglobal.com via Formspree.</p>
+        </form>
+      </div>
+
+      <div class="card">
+        <div class="section"><strong>Company</strong></div>
+        <div class="form">
+          <p><strong>Qingdao Best-Integrity Trade Co.,Ltd</strong><br/>
+          RM1004, Shandong International Trade Mansion,<br/>
+          No.51 Taiping Road, Shinan District, Qingdao City, China.</p>
+
+          <p>Tel: 0086-532-66600216<br/>
+          Fax: 0086-532-85786604<br/>
+          Email: <a href="mailto:fashion@bestintegrityglobal.com">fashion@bestintegrityglobal.com</a></p>
+        </div>
+      </div>
     </div>
-  </div>
-</main>
-<footer class="footer">
-  <div class="container small">© 2025 Qingdao Best-Integrity Trade Co., Ltd</div>
-</footer>
-<script src="js/site.js"></script>
-</body></html>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="muted">© 2025 Qingdao Best-Integrity Trade Co., Ltd</p>
+    </div>
+  </footer>
+</body>
+</html>
