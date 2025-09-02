@@ -1,21 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Qingdao Best-Integrity</title>
-  <meta property="og:url" content="https://www.bestintegrityglobal.com/contact.html">
-</head>
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Contact · Best-Integrity</title><link rel="stylesheet" href="css/style.css"/></head>
 <body>
-  <header><a href="index.html">Home</a> | Contact</header>
-  <h1>Contact Us</h1>
-  <form action="https://formspree.io/f/xandbbya" method="POST">
-    <label>Your Name:<br><input type="text" name="name" required></label><br>
-    <label>Your Email:<br><input type="email" name="email" required></label><br>
-    <label>Message:<br><textarea name="message" rows="6" required></textarea></label><br>
-    <button type="submit">Send</button>
-  </form>
-  <p>Email: fashion@bestintegrityglobal.com</p>
-  <footer><p>&copy; https://www.bestintegrityglobal.com</p></footer>
-</body>
-</html>
+<header class="header">
+  <div class="nav container">
+    <a class="logo" href="index.html">
+      <img src="images/logo.png" alt="logo" onerror="this.style.display='none'"/>
+      <span>Qingdao Best-Integrity Trade Co., Ltd</span>
+    </a>
+    <nav class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="precision.html">Precision</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">企业简介</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+  <h1>Contact</h1>
+  <div class="split">
+    <div class="form">
+      <form method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
+        <label>Company & contact<input name="company" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Request details<textarea rows="6" name="details" placeholder="Style, fabric, quantity, target delivery window, pet clothing, etc."></textarea></label>
+        <button class="button" type="submit">Send inquiry</button>
+        <div class="small">Replace YOUR_FORM_ID with your Formspree form ID.</div>
+      </form>
+    </div>
+    <div>
+      <h3>Qingdao Best-Integrity Trade Co.,Ltd</h3>
+      <p>RM1004, Shandong International Trade Mansion,<br>No.51 Taiping Road, Shinan District, Qingdao City, China.</p>
+      <p>Tel: 0086-532-66600216<br>Fax: 0086-532-85786604<br>Email: <a href="mailto:fashion@bestintegrityglobal.com">fashion@bestintegrityglobal.com</a></p>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="container small">© 2025 Qingdao Best-Integrity Trade Co., Ltd</div>
+</footer>
+<script src="js/site.js"></script>
+</body></html>
