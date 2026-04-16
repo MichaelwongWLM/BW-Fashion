@@ -1,2 +1,19 @@
 
-(function(){const navToggle=document.querySelector('.nav-toggle');const nav=document.querySelector('.nav');if(navToggle&&nav){navToggle.addEventListener('click',function(){const isOpen=nav.classList.toggle('open');navToggle.setAttribute('aria-expanded',String(isOpen));});}document.querySelectorAll('.filter-btn').forEach(btn=>{btn.addEventListener('click',()=>{const target=btn.dataset.filter;document.querySelectorAll('.filter-btn').forEach(b=>b.classList.toggle('active',b===btn));document.querySelectorAll('.filter-item').forEach(item=>{item.style.display=(target==='all'||item.dataset.category===target)?'':'none';});});});const form=document.getElementById('inquiry-form');if(form){const params=new URLSearchParams(window.location.search);const map={inquiry:['inquiryType',{'quote':'Quotation request','sample':'Sample discussion'}],style:['styleReference'],category:['productCategory'],product:['productName']};Object.keys(map).forEach(key=>{if(params.get(key)){const conf=map[key];const field=form.elements[conf[0]];if(!field)return;if(conf[1]){field.value=conf[1][params.get(key)]||params.get(key);}else{field.value=params.get(key);}}});function buildInquiryText(){const data=new FormData(form);const lines=[`Inquiry Type: ${data.get('inquiryType')||''}`,`Contact Name: ${data.get('contactName')||''}`,`Company Name: ${data.get('companyName')||''}`,`Business Email: ${data.get('businessEmail')||''}`,`Phone / WhatsApp: ${data.get('phone')||''}`,`Country / Market: ${data.get('market')||''}`,`Product Category: ${data.get('productCategory')||''}`,`Style Reference: ${data.get('styleReference')||''}`,`Product Name: ${data.get('productName')||''}`,`Target Quantity: ${data.get('targetQuantity')||''}`,`Target Delivery Window: ${data.get('deliveryWindow')||''}`,`Requested Shipping Basis: ${data.get('shippingBasis')||''}`,'','Message Details:',data.get('messageDetails')||''];return lines.join('\n');}const openEmail=document.getElementById('open-email');const copyInquiry=document.getElementById('copy-inquiry');if(openEmail){openEmail.addEventListener('click',()=>{const data=new FormData(form);const subjectParts=[data.get('inquiryType')||'Inquiry',data.get('productCategory')||'Product',data.get('styleReference')||''].filter(Boolean);const subject=subjectParts.join(' - ');const body=encodeURIComponent(buildInquiryText());window.location.href=`mailto:fashion@bestintegrityglobal.com?subject=${encodeURIComponent(subject)}&body=${body}`;});}if(copyInquiry){copyInquiry.addEventListener('click',async()=>{const text=buildInquiryText();try{await navigator.clipboard.writeText(text);copyInquiry.textContent='Copied';setTimeout(()=>copyInquiry.textContent='Copy inquiry text',1600);}catch(err){alert('Copy failed on this browser. Please copy the text manually.');}});}}})();
+document.addEventListener('DOMContentLoaded', function () {
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.site-nav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function () {
+      const isOpen = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+    nav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+  const year = document.getElementById('year');
+  if (year) year.textContent = new Date().getFullYear();
+});
