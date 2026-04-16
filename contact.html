@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Qingdao Best-Integrity Trade Co., Ltd.</title>
+  <meta name="description" content="Contact page for garment inquiries, quotation requests, and sampling discussions, with style-reference prefilling from the product gallery.">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#0f4c81">
+  <meta property="og:title" content="Contact | Qingdao Best-Integrity Trade Co., Ltd.">
+  <meta property="og:description" content="Contact page for garment inquiries, quotation requests, and sampling discussions, with style-reference prefilling from the product gallery.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/optimized/factory-hero.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/site.js"></script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Qingdao Best-Integrity Trade Co., Ltd.", "url": "./", "logo": "images/logo.png", "email": "fashion@bestintegrityglobal.com", "telephone": "+86-532-66600216", "address": {"@type": "PostalAddress", "streetAddress": "Room 1004, Shandong International Trade Mansion, No. 51 Taiping Road, Shinan District", "addressLocality": "Qingdao", "addressCountry": "CN"}}</script>
+  
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav-shell">
+    <a class="brand" href="index.html" aria-label="Qingdao Best-Integrity Trade Co., Ltd. home">
+      <img src="images/logo.png" alt="Qingdao Best-Integrity Trade Co., Ltd. logo" width="112" height="53">
+      <span>Qingdao Best-Integrity Trade Co., Ltd.</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+      <span class="sr-only">Toggle navigation</span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="precision.html">Sampling & QA</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html" class="active" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="container page-hero">
+    <span class="eyebrow">Contact</span>
+    <h1>Send a more complete inquiry and reduce unnecessary back-and-forth.</h1>
+    <p>The form below is structured for garment sourcing discussions. It now accepts direct prefill from the product page so the chosen style reference stays attached to the inquiry.</p>
+  </section>
+
+  <section class="section-sm">
+    <div class="container contact-layout">
+      <div class="panel">
+        <h2>Inquiry form</h2>
+        <p class="lead">Replace <strong>YOUR_FORM_ID</strong> with your actual Formspree form ID before going live.</p>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="form-grid">
+          <div>
+            <label for="contact-name">Contact name</label>
+            <input id="contact-name" name="contact_name" type="text" placeholder="Your name" required>
+          </div>
+          <div>
+            <label for="company-name">Company name</label>
+            <input id="company-name" name="company_name" type="text" placeholder="Company / buyer name">
+          </div>
+          <div>
+            <label for="email">Business email</label>
+            <input id="email" name="email" type="email" placeholder="name@company.com" required>
+          </div>
+          <div>
+            <label for="phone">Phone / WhatsApp</label>
+            <input id="phone" name="phone_whatsapp" type="text" placeholder="+00 123 456 789">
+          </div>
+          <div>
+            <label for="market">Country / market</label>
+            <input id="market" name="market" type="text" placeholder="Japan, EU, USA, etc.">
+          </div>
+          <div>
+            <label for="category">Product category</label>
+            <select id="category" name="product_category">
+              <option value="">Select a category</option>
+              <option value="Outerwear">Outerwear</option>
+              <option value="Denim & Bottoms">Denim & Bottoms</option>
+              <option value="Womenswear">Womenswear</option>
+              <option value="Pet Products">Pet Products</option>
+              <option value="Stage Costumes">Stage Costumes</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="style-ref">Style reference</label>
+            <input id="style-ref" name="style_reference" type="text" placeholder="Example: WJC25198 or 93043">
+          </div>
+          <div>
+            <label for="quantity">Target quantity</label>
+            <input id="quantity" name="target_quantity" type="text" placeholder="Example: 1,200 pcs">
+          </div>
+          <div>
+            <label for="delivery">Target delivery window</label>
+            <input id="delivery" name="target_delivery_window" type="text" placeholder="Example: August 2026">
+          </div>
+          <div>
+            <label for="incoterm">Requested shipping basis</label>
+            <select id="incoterm" name="requested_shipping_basis">
+              <option value="">Select if known</option>
+              <option>FOB Qingdao</option>
+              <option>CNF</option>
+              <option>CIF</option>
+              <option>DDU</option>
+              <option>DDP</option>
+              <option>To be discussed</option>
+            </select>
+          </div>
+          <div>
+            <label for="sample-purpose">Request type</label>
+            <select id="sample-purpose" name="request_type">
+              <option value="">Select one</option>
+              <option>Quotation</option>
+              <option>Sampling</option>
+              <option>Both quotation and sampling</option>
+              <option>General inquiry</option>
+            </select>
+          </div>
+          <div class="full">
+            <label for="message">Request details</label>
+            <textarea id="message" name="message" placeholder="Style reference, fabric idea, sizing, quantity split, target market, packaging notes, or sampling request." required></textarea>
+          </div>
+          <input type="hidden" name="_gotcha" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="subject" value="Website inquiry from Best-Integrity contact page">
+          <div class="full">
+            <button class="button" type="submit">Send inquiry</button>
+            <p class="note">Direct email is also available at <a href="mailto:fashion@bestintegrityglobal.com">fashion@bestintegrityglobal.com</a>. The form above still requires your real Formspree form ID before deployment.</p>
+          </div>
+        </form>
+      </div>
+
+      <aside class="contact-card">
+        <h3>Company contact</h3>
+        <p><strong>Qingdao Best-Integrity Trade Co., Ltd.</strong><br>Room 1004, Shandong International Trade Mansion<br>No. 51 Taiping Road, Shinan District<br>Qingdao, China</p>
+        <p style="margin-top:14px"><strong>Email:</strong> <a href="mailto:fashion@bestintegrityglobal.com">fashion@bestintegrityglobal.com</a><br><strong>Tel:</strong> <a href="tel:+8653266600216">+86-532-66600216</a><br><strong>Fax:</strong> +86-532-85786604</p>
+        <div class="notice" style="margin-top:18px">
+          <p>For faster handling, include the style reference, expected quantity, requested shipping basis, and target timing in the first message.</p>
+        </div>
+        <div class="mini-card" style="margin-top:18px">
+          <h3>Useful first-message checklist</h3>
+          <ul>
+            <li>Style number or reference image</li>
+            <li>Quantity and timing</li>
+            <li>Market / destination</li>
+            <li>Material or workmanship notes</li>
+            <li>Any labeling or packing requirements</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section-sm">
+    <div class="container panel">
+      <div class="section-header">
+        <div>
+          <h2>Common questions before sending the inquiry</h2>
+          <p>These points are often clarified first, so placing them here reduces avoidable delay.</p>
+        </div>
+      </div>
+      <div class="faq-list">
+        <article class="faq-item">
+  <button class="faq-question" type="button" data-faq aria-expanded="false">
+    <span>What should I include in the first inquiry?</span>
+    <span class="faq-icon">+</span>
+  </button>
+  <div class="faq-answer" hidden>
+    <p>For a faster reply, include a style reference or image, the product category, expected quantity, target delivery window, destination market, and any special fabric, sizing, packaging, or labeling notes.</p>
+  </div>
+</article>
+<article class="faq-item">
+  <button class="faq-question" type="button" data-faq aria-expanded="false">
+    <span>What product groups are shown on the current website?</span>
+    <span class="faq-icon">+</span>
+  </button>
+  <div class="faq-answer" hidden>
+    <p>The current site is organized around outerwear, denim and bottoms, womenswear, pet products, and stage-costume references.</p>
+  </div>
+</article>
+<article class="faq-item">
+  <button class="faq-question" type="button" data-faq aria-expanded="false">
+    <span>Can I ask for FOB Qingdao pricing?</span>
+    <span class="faq-icon">+</span>
+  </button>
+  <div class="faq-answer" hidden>
+    <p>Yes. The commercial terms page presents MOQ-based pricing with FOB Qingdao as the default quotation basis.</p>
+  </div>
+</article>
+<article class="faq-item">
+  <button class="faq-question" type="button" data-faq aria-expanded="false">
+    <span>Are other shipping terms possible?</span>
+    <span class="faq-icon">+</span>
+  </button>
+  <div class="faq-answer" hidden>
+    <p>Yes. The site copy states that CNF, CIF, DDU, and DDP can be discussed depending on the order structure and destination requirements.</p>
+  </div>
+</article>
+      </div>
+      <div class="inline-links">
+        <a class="button-secondary" href="faq.html">View full FAQ</a>
+        <a class="button" href="products.html">Back to products</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>Qingdao Best-Integrity Trade Co., Ltd.</strong>
+      <p>Room 1004, Shandong International Trade Mansion<br>No. 51 Taiping Road, Shinan District<br>Qingdao, China</p>
+    </div>
+    <div>
+      <p><a href="mailto:fashion@bestintegrityglobal.com">fashion@bestintegrityglobal.com</a><br><a href="tel:+8653266600216">+86-532-66600216</a><br>Fax: +86-532-85786604</p>
+    </div>
+    <div>
+      <div class="footer-links">
+        <a href="products.html">Products</a>
+        <a href="precision.html">Sampling & QA</a>
+        <a href="terms.html">Terms</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">© <span id="year">2026</span> Qingdao Best-Integrity Trade Co., Ltd. All rights reserved.</div>
+</footer>
+</body>
+</html>
