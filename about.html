@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Qingdao Best-Integrity Trade Co., Ltd.</title>
+  <meta name="description" content="About Qingdao Best-Integrity Trade Co., Ltd., a Qingdao-based garment export company supporting international buyers with product sourcing, sampling, quotation, order follow-up, and quality coordination." />
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --surface: #ffffff;
+      --text: #13263b;
+      --muted: #5d6f82;
+      --line: #dce5ef;
+      --primary: #1f5fa8;
+      --primary-dark: #184c86;
+      --soft: #edf4fb;
+      --shadow: 0 10px 30px rgba(19, 38, 59, 0.08);
+      --radius: 20px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      min-height: 82px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .brand-mark {
+      width: 50px;
+      height: 50px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #2c7bd9, #76b64d);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      box-shadow: var(--shadow);
+      flex: 0 0 auto;
+    }
+
+    .brand-text {
+      font-size: 0.95rem;
+      line-height: 1.25;
+      font-weight: 700;
+    }
+
+    .brand-text small {
+      display: block;
+      color: var(--muted);
+      font-weight: 400;
+      font-size: 0.76rem;
+      margin-top: 2px;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav a {
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .nav a:hover,
+    .nav a:focus-visible {
+      background: var(--soft);
+      outline: none;
+    }
+
+    .nav a.active {
+      background: #e4eef9;
+      color: var(--primary-dark);
+    }
+
+    .hero {
+      padding: 58px 0 34px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin: 0 0 18px;
+      padding: 8px 14px;
+      border: 1px solid #cfe0f4;
+      background: var(--soft);
+      color: var(--primary-dark);
+      border-radius: 999px;
+      font-size: 0.92rem;
+      font-weight: 700;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 4.7rem);
+      max-width: 900px;
+    }
+
+    .lead {
+      max-width: 900px;
+      margin: 22px 0 0;
+      font-size: 1.14rem;
+      color: var(--muted);
+    }
+
+    .section {
+      padding: 22px 0;
+    }
+
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+      display: grid;
+      gap: 24px;
+    }
+
+    .grid-2 { grid-template-columns: 1.2fr 0.9fr; }
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+    .card,
+    .cta-box {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .card {
+      padding: 28px;
+    }
+
+    .card h2,
+    .card h3,
+    .section h2 {
+      margin-bottom: 16px;
+    }
+
+    .section h2 {
+      font-size: clamp(1.8rem, 4vw, 2.7rem);
+    }
+
+    .card p,
+    .section p,
+    .section li,
+    footer p,
+    footer li {
+      color: var(--muted);
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    .stack {
+      display: grid;
+      gap: 14px;
+    }
+
+    .visual-card {
+      position: relative;
+      overflow: hidden;
+      min-height: 100%;
+      background: linear-gradient(180deg, #fbfdff 0%, #f3f7fb 100%);
+    }
+
+    .visual-wrap {
+      position: relative;
+      min-height: 100%;
+      display: grid;
+      place-items: center;
+      padding: 22px;
+    }
+
+    .visual-frame {
+      width: 100%;
+      min-height: 340px;
+      border-radius: 18px;
+      border: 1px solid #e4ecf5;
+      background:
+        radial-gradient(circle at top right, rgba(118, 182, 77, 0.14), transparent 28%),
+        radial-gradient(circle at bottom left, rgba(44, 123, 217, 0.08), transparent 32%),
+        linear-gradient(180deg, #ffffff 0%, #f8fbfe 100%);
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 16px;
+      padding: 18px;
+      align-items: stretch;
+    }
+
+    .visual-photo {
+      border-radius: 16px;
+      border: 1px solid #d9e5f0;
+      background: linear-gradient(135deg, #dbe8f5, #f7fbff);
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100%;
+    }
+
+    .visual-photo:nth-child(2) {
+      transform: translateY(28px);
+    }
+
+    .visual-photo strong {
+      font-size: 0.98rem;
+      color: var(--text);
+    }
+
+    .visual-photo span {
+      font-size: 0.9rem;
+      color: var(--muted);
+      display: block;
+      margin-top: 6px;
+    }
+
+    .list,
+    .feature-list,
+    .check-list,
+    .footer-links {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .feature-list,
+    .check-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .feature-list li,
+    .check-list li {
+      position: relative;
+      padding-left: 34px;
+      min-height: 24px;
+    }
+
+    .feature-list li::before,
+    .check-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #e6f0fb;
+      border: 1px solid #c9def3;
+      box-shadow: inset 0 0 0 5px var(--primary);
+    }
+
+    .section-intro {
+      margin-top: 14px;
+      max-width: 780px;
+    }
+
+    .step-number {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 700;
+      margin-bottom: 16px;
+      box-shadow: 0 10px 18px rgba(31, 95, 168, 0.24);
+    }
+
+    .cta-box {
+      padding: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .cta-copy {
+      max-width: 760px;
+    }
+
+    .cta-copy p {
+      margin-top: 14px;
+      color: var(--muted);
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 20px;
+      border-radius: 999px;
+      font-weight: 700;
+      border: 1px solid transparent;
+      transition: transform 0.18s ease, background-color 0.18s ease, border-color 0.18s ease;
+    }
+
+    .btn:hover,
+    .btn:focus-visible {
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus-visible {
+      background: var(--primary-dark);
+    }
+
+    .btn-secondary {
+      background: #fff;
+      color: var(--primary-dark);
+      border-color: #c8daee;
+    }
+
+    .site-footer {
+      margin-top: 42px;
+      padding: 42px 0 54px;
+      border-top: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 30px;
+    }
+
+    .footer-brand h3 {
+      font-size: 1.3rem;
+      margin-bottom: 14px;
+    }
+
+    .footer-brand p {
+      margin-top: 8px;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 10px;
+      justify-content: start;
+    }
+
+    .footer-links a {
+      color: var(--primary-dark);
+      font-weight: 600;
+    }
+
+    .copyright {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    @media (max-width: 980px) {
+      .grid-2,
+      .grid-3,
+      .grid-4,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .header-inner,
+      .cta-box {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav {
+        justify-content: flex-start;
+      }
+
+      .visual-frame {
+        grid-template-columns: 1fr;
+      }
+
+      .visual-photo:nth-child(2) {
+        transform: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: min(var(--max), calc(100% - 24px));
+      }
+
+      .site-header {
+        position: static;
+      }
+
+      .hero {
+        padding-top: 34px;
+      }
+
+      .card,
+      .cta-box {
+        padding: 22px;
+      }
+
+      .nav a {
+        padding: 8px 12px;
+      }
+
+      .brand-text {
+        font-size: 0.88rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Qingdao Best-Integrity Trade Co., Ltd. home">
+        <div class="brand-mark">BI</div>
+        <div class="brand-text">
+          Qingdao Best-Integrity Trade Co., Ltd.
+          <small>Garment export support for international buyers</small>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html" aria-current="page">About</a>
+        <a href="products.html">Products</a>
+        <a href="sampling.html">Sampling &amp; QA</a>
+        <a href="terms.html">Terms</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="about-page">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">About the Company</p>
+        <h1>About Qingdao Best-Integrity Trade Co., Ltd.</h1>
+        <p class="lead">
+          Qingdao Best-Integrity Trade Co., Ltd. is a Qingdao-based garment export company serving
+          international buyers across multiple apparel categories. We support product sourcing,
+          sampling, quotation, order follow-up, and quality coordination for export business.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <article class="card stack">
+          <div>
+            <h2>Company Snapshot</h2>
+            <p>
+              Qingdao Best-Integrity Trade Co., Ltd. is a garment export company based in Qingdao, China.
+              Our current product categories include outerwear, denim and bottoms, womenswear,
+              pet apparel, and selected costume styles.
+            </p>
+          </div>
+          <p>
+            We work with buyers on product development, sampling, pricing, production follow-up,
+            and shipment coordination. Our goal is to support clear communication and efficient
+            order handling from initial inquiry to final delivery.
+          </p>
+        </article>
+
+        <aside class="card visual-card" aria-label="Production and coordination overview">
+          <div class="visual-wrap">
+            <div class="visual-frame">
+              <div class="visual-photo">
+                <div>
+                  <strong>Production coordination</strong>
+                  <span>Structured communication on styles, quantities, and delivery timing.</span>
+                </div>
+                <span>Supplier and order follow-up support</span>
+              </div>
+              <div class="visual-photo">
+                <div>
+                  <strong>Sampling and QA</strong>
+                  <span>Clear checkpoints for sample comments, quality review, and shipment discussion.</span>
+                </div>
+                <span>Practical support from inquiry to order handling</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-3">
+        <article class="card stack">
+          <h3>Product Categories</h3>
+          <p>
+            Our current product categories include outerwear, denim and bottoms, womenswear,
+            pet apparel, and selected costume styles for buyer review and business discussion.
+          </p>
+        </article>
+
+        <article class="card stack">
+          <h3>Buyer Support</h3>
+          <p>
+            We support buyers with product review, quotation discussion, sampling coordination,
+            and clarification of commercial terms before order confirmation.
+          </p>
+        </article>
+
+        <article class="card stack">
+          <h3>Inquiry Information</h3>
+          <p>
+            To help us provide a clearer first response, buyers are encouraged to share style
+            references, quantity expectations, target delivery timing, destination market,
+            and any key material or packaging requirements.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">How We Support Buyers</p>
+        <h2>From product review to inquiry preparation</h2>
+        <ul class="feature-list">
+          <li>Organize product categories for easier review</li>
+          <li>Support quotation and sampling discussion with clearer inputs</li>
+          <li>Help buyers prepare key information before formal inquiry</li>
+          <li>Clarify commercial terms before order confirmation</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">What to Include in an Inquiry</p>
+        <h2>Useful First-Message Information</h2>
+        <ul class="check-list">
+          <li>Style number, reference image, or product category</li>
+          <li>Estimated quantity or MOQ discussion range</li>
+          <li>Target season, delivery window, or shipment timing</li>
+          <li>Destination market and preferred shipping basis</li>
+          <li>Any known requirements for materials, sizing, labeling, or packaging</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Typical Working Process</h2>
+        <p class="section-intro">
+          A typical cooperation process starts from product review and moves step by step into
+          inquiry, sampling, quotation, and order discussion.
+        </p>
+
+        <div class="grid-4" style="margin-top: 22px;">
+          <article class="card stack">
+            <div class="step-number">1</div>
+            <h3>Review Product Categories</h3>
+            <p>Identify the most relevant product type or style reference.</p>
+          </article>
+
+          <article class="card stack">
+            <div class="step-number">2</div>
+            <h3>Share Inquiry Basics</h3>
+            <p>Provide quantity, timing, market, and key product requirements.</p>
+          </article>
+
+          <article class="card stack">
+            <div class="step-number">3</div>
+            <h3>Confirm Sample Requirements</h3>
+            <p>Align on sample comments, quality expectations, and review points.</p>
+          </article>
+
+          <article class="card stack">
+            <div class="step-number">4</div>
+            <h3>Discuss Quotation and Order Terms</h3>
+            <p>Confirm pricing basis, delivery schedule, and shipment terms before bulk production.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-box">
+          <div class="cta-copy">
+            <h2>Need Product or Quotation Support?</h2>
+            <p>
+              Review our product categories first, then contact us with your style references,
+              quantity, and target delivery schedule for further discussion.
+            </p>
+          </div>
+          <div class="cta-buttons">
+            <a class="btn btn-primary" href="products.html">View Products</a>
+            <a class="btn btn-secondary" href="contact.html">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>Qingdao Best-Integrity Trade Co., Ltd.</h3>
+        <p>Room 1004, Shandong International Trade Mansion</p>
+        <p>No. 51 Taiping Road, Shinan District</p>
+        <p>Qingdao, China</p>
+        <p><a href="mailto:fashion@bestintegrityglobal.com">fashion@bestintegrityglobal.com</a></p>
+        <p><a href="tel:+8653266600216">+86-532-66600216</a></p>
+        <p>Fax: +86-532-85786604</p>
+      </div>
+
+      <div>
+        <h3 style="margin-bottom: 14px;">Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="products.html">Products</a></li>
+          <li><a href="sampling.html">Sampling &amp; QA</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <p class="copyright">© 2026 Qingdao Best-Integrity Trade Co., Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
