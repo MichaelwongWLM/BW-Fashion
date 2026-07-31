@@ -1,0 +1,31 @@
+.form-submit-status {
+  min-height: 1.5em;
+  margin: 0.9rem 0 0;
+  max-width: 38rem;
+  color: #526169;
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+.form-submit-status:empty {
+  min-height: 0;
+  margin-top: 0;
+}
+
+.form-submit-status.is-sending {
+  color: #526f7a;
+}
+
+.form-submit-status.is-success {
+  color: #286443;
+}
+
+.form-submit-status.is-error {
+  color: #a13f33;
+}
+
+.inquiry-form button[type="submit"]:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
